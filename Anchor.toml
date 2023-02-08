@@ -1,0 +1,16 @@
+[features]
+seeds = false
+skip-lint = false
+[programs.localnet]
+token_sale = "EUH9RrCQfQhu1Fq4X1Y6x8NSGsxeAbPynckM8M71M4ph"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+# cluster = "https://attentive-practical-sun.solana-mainnet.discover.quiknode.pro/"
+cluster = "devnet"
+wallet = "/Users/mdustries/.config/wallets/right-clickable-3VPfiR1CuqwkbLpU27qWs1TaZb6Dg4mvBfkeTHEWUNof.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
